@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>TechBD | <%- title %></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap-theme.min.css">
+
+	<script type="text/javascript" src="/ajax/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/bootstrap/js/bootstrap.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	  $(function() {
+	    $( "#datepicker" ).datepicker({ minDate: +1, maxDate: "+7D" ,dateFormat: 'yy/mm/dd'});
+	  });
+  </script>
+	
+</head>
+<body>
+	<header class="menu">
+	
+		<div class="container">
+			<div class="leftcontainer">
+				<a href="/home"><h1>TechBD</h1></a>
+			</div>
+			<div class="rightcontainer">
+				<ul>
+					<li><a href="/home">home</a></li>
+					<li><a href="/home">products</a></li>
+					<li><a href="/user/cart">Cart</a></li>
+					<li><a href="/user">Dashboard</a></li>
+				
+				</ul>
+			</div>
+		</div>
+	</header>
+
+	<%- content %>
+
+
+	
+</body>
+</html>

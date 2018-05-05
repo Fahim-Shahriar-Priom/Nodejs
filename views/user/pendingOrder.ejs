@@ -1,0 +1,30 @@
+<center><table border="1px" style="font-size:20px; padding:10px;">
+			<tr > 
+				<td style="font-size:20px; padding:10px;">Order Id</td>
+				<td style="font-size:20px; padding:10px;">Customer Id</td>
+				<td style="font-size:20px; padding:10px;">Customer Address</td>
+				<td style="font-size:20px; padding:10px;">Total Amount</td>
+				<td style="font-size:20px; padding:10px;">Shipping Date</td>
+				<td style="font-size:20px; padding:10px;">Status</td>
+			</tr>
+
+			<% if(pendingOrders!=null){%>
+				<% for(var i = 0; i < pendingOrders.length; i++) {%>
+
+					<tr > 
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].id%></td>
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].customer_id%></td>
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].customer_address%></td>
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].order_amount%> tk</td>
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].shipping_date%></td>
+						<td style="font-size:20px; padding:10px;"><%= pendingOrders[i].delivery_status%></td>
+						
+					</tr>
+
+			<%}}%>
+
+			
+			
+		</table>
+		
+</center>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechBD | <%- title %></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+</head>
+<body>
+	<header class="menu">
+	
+		<div class="container">
+			<div class="leftcontainer">
+				<a href="/home"><h1>TechBD</h1></a>
+			</div>
+			<div class="rightcontainer">
+				<h3>Welcome</h3>
+				
+			</div>
+		</div>
+	</header>
+	<div class="left_menu"> 
+		<ul>
+			<li><a href="/user" style="text-decoration:none;"><input type="button" value="Dashboard"/></a></li>
+			<li><input type="button" value="Orders"/>
+				<ul>
+					<li><a href="/user/pendingOrder">Pending Orders</a></li>
+					<li><a href="/user/deliveredOrder">Delivered Orders</a></li>
+				</ul>
+			</li>
+			<li><a href="/user/cart" style="text-decoration:none;"><input type="button" value="Cart"/></a></li>
+			<li><a href="/logout" style="text-decoration:none;"><input type="button" value="Logout"/></a></li>
+		</ul>
+	</div>
+	
+	<%- content %>
+
+
+	
+</body>
+</html>

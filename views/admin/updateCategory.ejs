@@ -1,0 +1,24 @@
+<center> 
+		<table border="1px" style="font-size:20px; padding:10px;">
+				
+		
+				<tr > 
+					<td style="font-size:20px; padding:10px;">ID</td>
+					<td style="font-size:20px; padding:10px;">Title</td>
+					<td style="font-size:20px; padding:10px;">Short Description</td>
+					<td style="font-size:20px; padding:10px;">Action</td>
+				</tr>
+				<% if(categories!=null){%>
+					<% for(var i = 0; i < categories.length; i++) {%>
+					<tr>
+						<td style="font-size:20px; padding:10px;"><%= categories[i].id %></td>
+						<td style="font-size:20px; padding:10px;"><%= categories[i].category_name %></td>
+						<td style="font-size:20px; padding:10px;"><%= categories[i].short_desc %></td>
+						<td style="font-size:20px; padding:10px;"><a href="/admin/updateCategory/<%= categories[i].id %>">Update</a></td>
+					</tr>
+					<%}%>
+				<%}%>
+	
+			</table>
+			<p></p>
+	</center>

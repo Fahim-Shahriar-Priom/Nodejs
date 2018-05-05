@@ -1,0 +1,25 @@
+<center><table border="1px" style="font-size:20px; padding:10px;">
+			<tr > 
+				<td style="font-size:20px; padding:10px;">User Id</td>
+				<td style="font-size:20px; padding:10px;">Name</td>
+				<td style="font-size:20px; padding:10px;">Email</td>
+				<td style="font-size:20px; padding:10px;">Gender</td>
+				<td style="font-size:20px; padding:10px;">Type</td>
+		
+			
+			</tr>
+
+			<% if(users!=null){%>
+				<% for(var i = 0; i < users.length; i++) {%>
+				<tr > 
+					<td style="font-size:20px; padding:10px;"><%= users[i].id%></td>
+					<td style="font-size:20px; padding:10px;"><%= users[i].name%></td>
+					<td style="font-size:20px; padding:10px;"><%= users[i].email%></td>
+					<td style="font-size:20px; padding:10px;"><%= users[i].gender%></td>
+					<td style="font-size:20px; padding:10px;"><%= users[i].type_name%></td>
+					
+				</tr>
+			<%}}%>
+		</table>
+		
+</center>

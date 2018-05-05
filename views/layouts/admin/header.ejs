@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TechBD | <%- title %></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	
+</head>
+<body>
+	<header class="menu">
+	
+		<div class="container">
+			<div class="leftcontainer">
+				<a href="/home"><h1>TechBD</h1></a>
+			</div>
+			<div class="rightcontainer">
+				
+			</div>
+		</div>
+	</header>
+
+	<div class="left_menu"> 
+		<ul>
+			<li><a href="/admin" style="text-decoration: none;"><input type="button" value="Dashboard"/></a></li>
+			<li><input type="button" name="product" value="Products"/>
+				<ul>
+					<li><a href="/admin/addProduct">Add Product</a></li>
+					<li><a href="/admin/deleteProduct">Delete Product</a></li>
+					<li><a href="/admin/updateProduct">Update Proudct</a></li>
+				</ul>
+			</li>
+			</li>
+			<li><input type="button" value="Orders"/>
+				<ul>
+					<li><a href="/admin/pendingOrder">Pending Orders</a></li>
+					<li><a href="/admin/deliveredOrder">Delivered Orders</a></li>
+				</ul>
+			</li>
+			<li><a href="/admin/showUsers" style="text-decoration: none;"><input type="button" value="Users"/></a></li>
+			<li><a href="/logout" style="text-decoration: none;"><input type="button" value="Logout"/></a></li>
+		</ul>
+	</div>
+
+	<%- content %>
+	
+</body>
+</html>
